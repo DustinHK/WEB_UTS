@@ -13,11 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-<<<<<<< HEAD
     background: url(../assets/img/bg/bglogin.jpg) no-repeat;
-=======
-    background: url(/assets/img/bg/bglogin.jpg) no-repeat;
->>>>>>> 13a89c1afe24feb243ea24b19993757e930fdaf2
     background-size: cover;
     background-position: center;
 }
