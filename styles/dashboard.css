@@ -50,7 +50,7 @@ nav {
 .portal-btn button {
     padding: 16px 32px;
     border: 0;
-    background-color: #EFCD00;
+    background-color: aqua;
     border-radius: 8px;
     font-size: 16px;
     font-weight: bold;
@@ -58,7 +58,7 @@ nav {
 }
 
 .portal-btn button:hover {
-    background-color: #FFDD00;
+    background-color: aqua;
     scale: 110%;
 }
 
@@ -122,7 +122,7 @@ nav {
     width: 100px;
     margin-top: 4px;
     border: none;
-    background-color: #FFDD00;
+    background-color: aqua;
 }
 
 .news-container {
@@ -188,9 +188,9 @@ nav {
     font-size: 16px;
     font-weight: bold;
     padding: 16px 24px 16px 32px;
-    border: 3px solid #EFCD00;
+    border: 3px solid aqua;
     border-radius: 8px;
-    box-shadow: inset 0 0 0 0 #EFCD00;
+    box-shadow: inset 0 0 0 0 aqua;
     -webkit-transition: ease-out 300ms;
     -moz-transition: ease-out 300ms;
     transition: box-shadow 300ms, fill 200ms, color 150ms;
@@ -204,7 +204,7 @@ nav {
 .news-btn-container button:hover {
     fill: white;
     color: #FFF;
-    box-shadow: inset 400px 0 0 0 #EFCD00;
+    box-shadow: inset 400px 0 0 0 aqua;
 }
 
 
@@ -249,7 +249,7 @@ footer p {
 }
 
 .form-container hr {
-    border: 2px solid #FFDD00;
+    border: 2px solid aqua;
     margin-bottom: 24px;
 }
 
@@ -268,12 +268,12 @@ footer p {
 
 .textfield:focus {
     border: 1px solid transparent;
-    outline: 1.5px solid #FFDD00;
+    outline: 1.5px solid aqua;
 }
 
 .remember {
     margin-top: 8px;
-    accent-color: #FFDD00;
+    accent-color: aqua;
     text-align: start;
     font-size: 14px;
     font-weight: 500;
@@ -285,14 +285,14 @@ footer p {
 .login-btn {
     margin-top: 32px;
     padding: 8px;
-    background-color: #FFDD00;
-    border: 2px solid #EFCD00;
+    background-color: aqua;
+    border: 2px solid aqua;
     border-radius: 4px;
 }
 
 .login-btn:hover {
     cursor: pointer;
-    background-color: #EFCD00;
+    background-color: aqua;
 }
 
 
@@ -307,7 +307,7 @@ footer p {
 .dash-side-bar {
     width: 15%;
     height: auto;
-    background-color: #EFCD00;
+    background-color: aqua;
     display: flex;
     flex-direction: column;
 }
@@ -434,7 +434,7 @@ footer p {
 
 .add-data {
     height: 100vh;
-    background-color: #EFCD00;
+    background-color: aqua;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -451,7 +451,7 @@ footer p {
 }
 
 .add-form-container hr {
-    border: 2px solid #FFDD00;
+    border: 2px solid aqua;
     margin-bottom: 24px;
 }
 
