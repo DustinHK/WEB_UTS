@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.navbar {
+    background: transparent;
+    color: white;
+    text-align: right;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: fixed; /* Make the navbar fixed */
+    width: 100%; /* Ensure the navbar takes the full width of the screen */
+    top: 0; /* Position the navbar at the top of the screen */
+}
+
+.navbar a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 0 10px;
+   /* margin-right: 100px; */
+}
+
+
+.navbar a:hover {
+    color: orange;  
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    background: transparent;
+    color: white;
+    width: 10rem;
+    padding: 20px;
+    position: fixed;
+    top: 70px;
+    left: 15px;
+    bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a box shadow for the floating effect */
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    background: transparent;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(24, 23, 23);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+
+.content {
+    padding: 20px;
+    margin-left: 220px;
+    margin-right: 20px;
+    flex: 1;
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensure equal spacing between the cards */
+}
+
+.content h2 {
+    color: #8d2828;
+    height: 100px;
+    width: 1000px;
+    margin-left: 40%;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: calc(25% - 20px);
+    margin-right: 20px;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #3498db, #9b59b6);
+    display: flex; /* Make the card content a flex container */
+    flex-direction: column; /* Align content vertically */
+    align-items: flex-start; /* Align content to the start (left) */
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.card img {
+    border-radius: 50%;
+    margin-right: 10px;
+    max-width: 50px;
+}
+
+.card-content {
+    flex: 1;
+}
+
+.card-content h3 {
+    margin: 0;
+    color: #333;
+}
+
+.card-content p {
+    color: #555;
+}
+
+/* ... (rest of the styles) */
+
+
+/* ... (rest of the styles) */
+
+
+/* ... (rest of the styles) */
+
+/* 
+.content {
+    padding: 50px;
+    margin-left: 300px;
+    margin-right: 20px;
+    flex: 1;
+    justify-content: center;
+}
+
+
+.content p {
+    color: #000000;
+} */
+
+/* ... (previous styles) */
+
+/* .card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.card img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.card-content {
+    flex: 1;
+}
+
+.card-content h3 {
+    margin: 0;
+    color: #333;
+}
+
+.card-content p {
+    color: #555;
+}
+
+... (rest of the styles) */
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+}
