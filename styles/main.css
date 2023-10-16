@@ -73,10 +73,17 @@ body {
 }
 
 .content h2 {
-    color: #8d2828;
+    color: #000000;
     height: 100px;
     width: 1000px;
     margin-left: 40%;
+    font-weight: 50;
+}
+
+.h2 {
+    font-weight: 1000;
+    color: #000000;
+
 }
 
 .card {
