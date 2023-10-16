@@ -7,8 +7,9 @@ body {
 }
 
 .navbar {
-    background: transparent;
-    color: white;
+ 
+    background-color: #ffffff;
+    
     text-align: right;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -34,8 +35,9 @@ body {
 }
 
 .sidebar {
-    background: transparent;
-    color: white;
+    /* background: url(../assets/img/box/purple-floid-blur-gradation-wallpaper-preview.jpg) no-repeat; */
+    /* color: white; */
+    background-color: #ffffff;
     width: 10rem;
     padding: 20px;
     position: fixed;
@@ -43,7 +45,8 @@ body {
     left: 15px;
     bottom: 20px;
     border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a box shadow for the floating effect */
+    box-shadow: 3px 5px 2px  rgb(162, 161, 161);
+     /* Add a box shadow for the floating effect */
 }
 
 .sidebar a {
