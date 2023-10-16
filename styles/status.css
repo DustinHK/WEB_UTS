@@ -1,6 +1,6 @@
 .dash-main {
-    width: 1200px;
-    margin-left: 150px;
+  
+    margin-left: 2150px;
     padding: 100px;
     border-radius: 16px;
     background-color: white;
@@ -11,7 +11,7 @@
 }
 
 .dash-main table {
-    width: 100%;
+    width: 10%;
     border: 2px solid #ABABAB;
     border-collapse: collapse;
 }

@@ -9,15 +9,14 @@
     position: relative;
     width: 1200px;
     height: 250px;
-    margin: 240px auto;
-    margin-top: 100px;
-    margin-right: 10px;
+    margin: 100px auto;
+    margin-right: -100px;
     background:rgb(255, 255, 255);
 }
 .cons .box{
     position: relative;
-    width: calc(250px - 30px);
-    height: calc(250px - 30px);
+    width: calc(200px - 30px);
+    height: calc(200px - 30px);
     background:#000;
     float: left;
     margin: 30px;
@@ -42,7 +41,7 @@
 
 .cons .box:hover .icon{
     top: 20px;
-    left: 90px;
+    left: 65px;
     right: calc(50% - 50px);
     width: 50px;
     height: 50px;
@@ -73,7 +72,7 @@
     opacity: 0;
 }
 .cons .box:hover .contents {
-    top: 100px;
+    top: 80px;
     opacity: 1;
 
 }
@@ -82,7 +81,7 @@
    margin: 0;
    padding: 0;
    color: rgb(255, 255, 255);
-   font-size: 24px;
+   font-size: 19px;
 
 }
 
