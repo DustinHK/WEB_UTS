@@ -1,0 +1,33 @@
+.dash-main {
+    width: 1200px;
+    margin-left: 150px;
+    padding: 100px;
+    border-radius: 16px;
+    background-color: white;
+}
+
+.leading-btn {
+    text-align: end;
+}
+
+.dash-main table {
+    width: 100%;
+    border: 2px solid #ABABAB;
+    border-collapse: collapse;
+}
+
+.dash-main table thead {
+    background-color: #EFEFEF;
+}
+
+.dash-main table th, td {
+    padding: 8px;
+    border: 1px solid #ABABAB;
+}
+
+.action {
+    text-align: center;
+}
+
+
+
