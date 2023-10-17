@@ -56,8 +56,6 @@ $userData = $_SESSION["userData"];
                 </div>
             </div>
         </div>
-
-
         <div class="content">
             <div class="wrapper">
                 <p class="current-date"></p>
