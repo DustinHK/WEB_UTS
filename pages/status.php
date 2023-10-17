@@ -43,6 +43,8 @@
                     <td>Pending</td>
                     <td class="action">
                         <a href=#><button name="detail" class="detail-btn">Detail</button></a>
+                        <a href=""><button class="edit-btn">Terima</button></a>
+                        <a href=""><button class="delete-btn">Tolak</button></a>
                     </td>
                 </tr>
                 <tr>
@@ -51,6 +53,9 @@
                     <td>Pending</td>
                     <td class="action">
                         <a href=#><button name="detail" class="detail-btn">Detail</button></a>
+                        <a href=""><button class="edit-btn">Terima</button></a>
+                        <a href=""><button class="delete-btn">Tolak</button></a>
+
                     </td>
                 </tr>
                 <tr>
@@ -59,6 +64,9 @@
                     <td>Pending</td>
                     <td class="action">
                         <a href=#><button name="detail" class="detail-btn">Detail</button></a>
+                        <a href=""><button class="edit-btn">Terima</button></a>
+                        <a href=""><button class="delete-btn">Tolak</button></a>
+
                     </td>
                 </tr>
 
