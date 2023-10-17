@@ -50,7 +50,9 @@ $userData = $_SESSION["userData"];
                     <h3 style="font-size: 28px;"><?php echo $userData["nim"]?></h3>
                     <?php if ($userData["jenjang_studi"] != null) { ?>
                         <h3 style="font-size: 28px;"><?php echo $userData["jenjang_studi"]?></h3>
-                    <?php } ?>
+                    <?php } else { ?>
+                        <h3 style="font-size: 28px;"></h3>
+                    <?php }?>
                 </div>
             </div>
         </div>

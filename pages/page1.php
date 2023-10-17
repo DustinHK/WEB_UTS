@@ -1,3 +1,14 @@
+<?php 
+session_start(); 
+
+if (!isset($_SESSION["userData"])) {
+    header('Location: ../index.php');
+    exit;
+}
+
+$userData = $_SESSION["userData"];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +40,7 @@
 
         <main class="content">
             <h3>Form Biodata</h3>
-            <form action=".php" method="post">
+            <form action="../scripts/php/req_form.php" method="post">
                 <label for="nama">Nama:</label>
                 <input type="text" id="nama" name="nama" placeholder="Nama Lengkap Anda">
 
@@ -78,9 +89,9 @@
                 </fieldset>
 
                 <div class="form-buttons">
-                    <input type="submit" value="Submit">
-                    <input type="reset" value="Reset">
-                    <input type="button" value="Update" onclick="updateData()">
+                    <input type="submit" value="Submit" name="submit" id="submit">
+                    <input type="reset" value="Reset" name="reset" id="reset">
+                    <input type="button" value="Update" name="update" id="update" onclick="updateData()">
                 </div>
             </form>
         </main>
