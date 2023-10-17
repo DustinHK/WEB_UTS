@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Surat Keterangan Tugas Akhir</title>
-    <link rel="stylesheet" href="c.css">
+    <link rel="stylesheet" href="../styles/suratketakhir.css">
 </head>
 <body>
     <div class="letter">
         <div class="header">
             <div class="institution-logo">
-                <img src="../bg.png" alt="Logo Institusi">
+                <img src="../assets/img/logo.png" alt="Logo Institusi">
             </div>
             <div class="institution-name">
                 <h1>Universitas Mulawarman</h1>

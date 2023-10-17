@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Surat Aktif Kuliah</title>
-    <link rel="stylesheet" href="d.css">
+    <link rel="stylesheet" href="../styles/suratbaik.css">
 </head>
 <body>
     <div class="letter">
         <div class="header">
             <div class="institution-logo">
-                <img src="logo Unmul bangg.png" alt="Logo Institusi">
+                <img src="../assets/img/logo.png" alt="Logo Institusi">
             </div>
             <div class="institution-name">
                 <h1>Universitas Mulawarman</h1>
