@@ -1,0 +1,82 @@
+/* Gaya untuk elemen body */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Gaya untuk elemen .letter */
+.letter {
+    font-family: 'Times New Roman', Times, serif;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fffcfcca;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+/* Gaya untuk elemen .header */
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Gaya untuk elemen .institution-logo */
+.institution-logo img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Gaya untuk elemen .institution-name */
+.institution-name h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Gaya untuk elemen .content */
+.content {
+    padding: 20px;
+}
+
+/* Gaya untuk elemen h2 */
+h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Gaya untuk elemen ul */
+ul {
+    list-style: none;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Gaya untuk elemen pre */
+pre {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif; /* Mengubah font */
+    font-size: 18px; /* Memperbesar ukuran font */
+}
+
+
+
+/* Gaya untuk elemen .footer */
+.footer {
+    text-align: right;
+    margin-top: 20px; /* Menambahkan jarak atas sebesar 20px */
+}
+
+/* Gaya untuk elemen .footer p */
+.footer p {
+    margin: 5px 0; /* Memberi jarak 5px di atas dan di bawah setiap paragraf dalam .footer */
+}
+
+
+/* Gaya untuk hr (garis horizontal) */
+hr {
+    border: 1px solid #333;
+    margin: 10px 0;
+}
