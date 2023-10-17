@@ -8,9 +8,9 @@
 </head>
 <body>
     <div class="navbar">
-        <a href="../pages/main.html">Home</a>
-        <a href="../pages/about.html">About</a>
-        <a href="../index.html">Logout</a>
+        <a href="../pages/main.php">Home</a>
+        <a href="../pages/about.php">About</a>
+        <a href="../index.php">Logout</a>
         <a href="#">      </a>
         <a href="#">      </a>
     </div>

@@ -91,6 +91,16 @@
     </style>
 </head>
 <body>
+<<<<<<< HEAD:pages/page1.php
+    <div class="navbar">
+        <a href="../pages/main.php">Home</a>
+        <a href="../pages/about.php">About</a>
+        <a href="../index.php">Logout</a>
+        <a href="#">      </a>
+        <a href="#">      </a>
+    </div>
+
+=======
     <header class="navbar">
         <nav>
             <a href="../pages/main.html">Home</a>
@@ -100,6 +110,7 @@
             <a href="#"> </a>
         </nav>
     </header>
+>>>>>>> db945645268f663a798fdd6d8c5162404406fa22:pages/page1.html
 
     <div class="container">
         <div class="sidebar">

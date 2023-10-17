@@ -8,24 +8,23 @@
 </head>
 <body>
     <div class="navbar">
-        <a href="../pages/main.html">Home</a>
-        <a href="../pages/about.html">About</a>
-        <a href="../index.html">Logout</a>
+        <a href="../pages/main.php">Home</a>
+        <a href="../pages/about.php">About</a>
+        <a href="../index.php">Logout</a>
         <a href="#">      </a>
         <a href="#">      </a>
 
 
     </div>
 
-
     <div class="container">
         <div class="sidebar">
-            <a href="../pages/main.html">Halaman Utama</a>
-            <a href="../pages/page1.html">Profil</a>
+            <a href="../pages/main.php">Halaman Utama</a>
+            <a href="../pages/page1.php">Profil</a>
             <a class="sidebar-toggle" onclick="toggleSidebar()">Surat</a>
             <div class="sidebar-content" id="sidebarContent">
-                <a href="../pages/page2.html">Jenis Surat</a>
-                <a href="../pages/status.html">Status Surat</a>
+                <a href="../pages/page2.php">Jenis Surat</a>
+                <a href="../pages/status.php">Status Surat</a>
             </div>
         </div>
     

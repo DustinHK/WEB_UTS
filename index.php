@@ -1,3 +1,25 @@
+<?php
+    require 'scripts/php/koneksi.php';
+
+    if (isset($_POST['login'])) {
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+
+        $query = "SELECT * FROM user WHERE username = '$username' AND password = '$password'";
+        $result = mysqli_query($conn, $query);
+
+        if (mysqli_num_rows($result) === 1) {
+            $row = mysqli_fetch_assoc($result);
+            if ($row['username'] === $username && $row['password'] === $password) {
+                header('Location: pages/main.php');
+                exit;
+            }
+        } else {
+            $error = true;
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,10 +49,10 @@
                     <a href="#">Forgot password</a>
                 </div>
 
-                <button type="submit" class="btn"><a href="../WEB_UTS/pages/main.html">Login</a></button>
+                <button type="submit" class="btn"><a href="../WEB_UTS/pages/main.php">Login</a></button>
 
                 <div class="register-link">
-                    <p>Don't have an account? <a href="../WEB_UTS/pages/register.html">
+                    <p>Don't have an account? <a href="../WEB_UTS/pages/register.php">
                     Register</a></p>
                 </div>
         </form>
