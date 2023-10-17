@@ -125,120 +125,19 @@ body {
 .card-content p {
     color: #555;
 }
-.wrappers .btn1 {
-    width: 100px;
-    height: 40px;
-    margin-top: 20px;
-    background: rgb(45, 167, 224);
-    border: none;
-    outline: none;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    cursor: pointer;
-    font-size: 16px;
-    color: #333;
-    font-weight: 600;
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        margin-left: 0;
+    }
 }
-
-.wrappers .btn1 a {
-    text-decoration: none;
-    color: #292929;
-   
-}
-
-div {
-    border-radius: 5px;
-    background-color: #ffffff;
-    padding: 20px;
-}
-.content form {
-    border: 1px solid #ccc;
-    width : 45rem;
-    top : 70px;
-    padding: 100px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-        /* Gaya CSS untuk kontainer */
-        .container {
-            display: flex;
-        }
-
-        /* Gaya CSS untuk sidebar */
-        .sidebar {
-            width: 200px;
-        }
-
-        /* Gaya CSS untuk konten */
-        .content {
-            flex: 1;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        /* Gaya CSS untuk formulir */
-        form {
-            border: 1px solid #ccc;
-            padding: 20px;
-            border-radius: 10px; /* Bordered */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 500px; /* Lebar formulir */
-            margin: 20px; /* Jarak antara formulir dan elemen lain */
-        }
-
-        /* Gaya CSS untuk input dan label di formulir */
-        label {
-            margin: 10px 0;
-            font-weight: bold;
-        }
-
-        input[type="text"],
-        input[type="date"],
-        input[type="email"],
-        input[type="number"],
-        input[type="text"],
-        select,
-        input[type="file"] {
-            width: 100%; /* Mengisi seluruh lebar formulir */
-            padding: 5px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin: 5px 0;
-        }
-
-        /* Gaya CSS untuk elemen radio dan checkbox */
-        fieldset {
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 10px;
-            margin: 10px 0;
-        }
-
-        input[type="radio"],
-        input[type="checkbox"] {
-            margin: 0 5px;
-        }
-
-        /* Gaya CSS untuk tombol di formulir */
-        .form-buttons {
-            display: flex;
-            justify-content: center;
-        }
-
-        input[type="submit"],
-        input[type="reset"],
-        input[type="button"] {
-            padding: 10px 20px;
-            margin: 10px;
-            border: none;
-            background-color: #007bff;
-            color: #fff;
-            border-radius: 5px;
-            cursor: pointer;
-        }
