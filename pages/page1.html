@@ -96,17 +96,21 @@
             <a href="../pages/main.html">Home</a>
             <a href="../pages/about.html">About</a>
             <a href="../index.html">Logout</a>
+            <a href="#"> </a>
+            <a href="#"> </a>
         </nav>
     </header>
 
-    <div class "container">
-        <aside class="sidebar">
-            <nav>
-                <a href="#">Halaman Utama</a>
-                <a href="#">Profil</a>
-                <a href="#">Surat</a>
-            </nav>
-        </aside>
+    <div class="container">
+        <div class="sidebar">
+            <a href="../pages/main.html">Halaman Utama</a>
+            <a href="../pages/page1.html">Profil</a>
+            <a class="sidebar-toggle" onclick="toggleSidebar()">Surat</a>
+            <div class="sidebar-content" id="sidebarContent">
+                <a href="../pages/page2.html">Jenis Surat</a>
+                <a href="../pages/status.html">Status Surat</a>
+            </div>
+        </div>
 
         <main class="content">
             <h3>Form Biodata</h3>
@@ -173,5 +177,7 @@
             alert("Data berhasil diperbarui!");
         }
     </script>
+    <script src="../styles/script.js"></script>
+   
 </body>
 </html>
