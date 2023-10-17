@@ -1,25 +1,3 @@
-<?php
-    require 'scripts/php/koneksi.php';
-
-    if (isset($_POST['login'])) {
-        $username = $_POST['username'];
-        $password = $_POST['password'];
-
-        $query = "SELECT * FROM user WHERE username = '$username' AND password = '$password'";
-        $result = mysqli_query($conn, $query);
-
-        if (mysqli_num_rows($result) === 1) {
-            $row = mysqli_fetch_assoc($result);
-            if ($row['username'] === $username && $row['password'] === $password) {
-                header('Location: pages/main.php');
-                exit;
-            }
-        } else {
-            $error = true;
-        }
-    }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,16 +9,16 @@
 </head>
 <body >
     <div class="wrapper">
-        <form action="">
+        <form action="scripts/php/req_login.php" method="POST">
             <h1>Login</h1>
                 <div class="input-box">
-                    <input type="text" placeholder="username"
-                    required>
+                    <label for="username"></label>
+                    <input type="text" placeholder="username" name="username" required>
                     <i class='bx bxs-user'></i>
                 </div>
                 <div class="input-box">
-                    <input type="password" placeholder="password"
-                    required>
+                    <label for="password"></label>
+                    <input type="password" placeholder="password" name="password" required>
                     <i class='bx bxs-lock-alt'></i>
                 </div>
             
@@ -49,7 +27,7 @@
                     <a href="#">Forgot password</a>
                 </div>
 
-                <button type="submit" class="btn"><a href="../WEB_UTS/pages/main.php">Login</a></button>
+                <button type="submit" class="btn" name="login" id="name"><a href="../WEB_UTS/pages/main.php">Login</a></button>
 
                 <div class="register-link">
                     <p>Don't have an account? <a href="../WEB_UTS/pages/register.php">
