@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 17, 2023 at 07:24 AM
+-- Generation Time: Oct 17, 2023 at 06:42 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -24,20 +24,25 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Table structure for table `users`
 --
 
-CREATE TABLE `user` (
+CREATE TABLE `users` (
   `id_user` int(10) NOT NULL,
   `nim` varchar(20) NOT NULL,
   `username` varchar(15) NOT NULL,
   `password` varchar(20) NOT NULL,
   `nama_lengkap` varchar(50) NOT NULL,
+  `prodi` int(20) DEFAULT NULL,
+  `jenjang_studi` varchar(2) DEFAULT NULL,
+  `ipk` varchar(4) DEFAULT NULL,
+  `angkatan` int(4) DEFAULT NULL,
   `tempat_lahir` varchar(15) DEFAULT NULL,
   `tanggal_lahir` date DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
   `alamat` varchar(100) DEFAULT NULL,
   `no_telepon` int(20) DEFAULT NULL,
-  `privilege` varchar(6) DEFAULT NULL
+  `semester` int(2) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -45,9 +50,9 @@ CREATE TABLE `user` (
 --
 
 --
--- Indexes for table `user`
+-- Indexes for table `users`
 --
-ALTER TABLE `user`
+ALTER TABLE `users`
   ADD PRIMARY KEY (`id_user`);
 
 --
@@ -55,10 +60,10 @@ ALTER TABLE `user`
 --
 
 --
--- AUTO_INCREMENT for table `user`
+-- AUTO_INCREMENT for table `users`
 --
-ALTER TABLE `user`
-  MODIFY `id_user` int(10) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `users`
+  MODIFY `id_user` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
