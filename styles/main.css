@@ -98,7 +98,7 @@ body {
     width: calc(100%);
     margin-right: 20px;
     box-sizing: border-box;
-    background: linear-gradient(to bottom, #3498db, #9b59b6);
+    background: linear-gradient(to bottom, #5fbaf6, #445dd7);
     display: flex; /* Make the card content a flex container */
     flex-direction: column; /* Align content vertically */
     align-items: flex-start; /* Align content to the start (left) */
