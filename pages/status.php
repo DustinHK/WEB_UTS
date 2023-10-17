@@ -37,12 +37,36 @@
                 </tr>
             </thead>
             <tbody>
+                <tr>
                     <td>1</td>
                     <td>Surat Aktif Kuliah</td>
                     <td>Pending</td>
+<<<<<<< HEAD:pages/status.php
                     <td >
                         <div class="wrappers"><button type="submit" class="btn1"><a href="../index.php">Submit</a></button></div>
                     </td>
+=======
+                    <td class="action">
+                        <a href=#><button name="detail" class="detail-btn">Detail</button></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Surat Aktif Kuliah</td>
+                    <td>Pending</td>
+                    <td class="action">
+                        <a href=#><button name="detail" class="detail-btn">Detail</button></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Surat Aktif Kuliah</td>
+                    <td>Pending</td>
+                    <td class="action">
+                        <a href=#><button name="detail" class="detail-btn">Detail</button></a>
+                    </td>
+                </tr>
+>>>>>>> db945645268f663a798fdd6d8c5162404406fa22:pages/status.html
             </tbody>
         </table>
     </section>
