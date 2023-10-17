@@ -10,7 +10,7 @@
     <section class="regis">
         <div class="regis-form-container">
             <h1>REGISTER</h1><hr><br>
-            <form action="../index.php" method="post">
+            <form action="../scripts/php/req_register.php" method="post">
                 <label for="nama">Nama</label>
                 <input type="text" name="nama" class="textfield">
                 <label for="nim">NIM</label>
@@ -19,10 +19,10 @@
                 <input type="text" name="username" class="textfield">
                 <label for="pw">Password</label>
                 <input type="password" name="password" class="textfield">
+                <div class ="wrapper">
+                    <button type="submit" class="btn" name="register" id="register">Submit</button>
+                </div>
             </form>
-            <div class ="wrapper">
-                <button type="submit" class="btn"><a href="../index.php">Submit</a></button>
-            </div>
         </div>
     </section>
 </body>
