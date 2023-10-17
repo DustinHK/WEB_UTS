@@ -120,7 +120,7 @@ body {
 
 .card-content h3 {
     margin: 0;
-    color: #333;
+    color: #ffffff;
 }
 
 .card-content p {
@@ -157,12 +157,12 @@ body{
   padding: 0 10px;
   justify-content: center;
   min-height: 100vh;
-  background: #9B59B6;
+  background: #ffffff;
 }
 .content .wrapper{
   background: #fff;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%; /* Ensure the navbar takes the full width of the screen */
   align-items: center;
   padding: 10px;
