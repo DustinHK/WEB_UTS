@@ -15,11 +15,13 @@ $userData = $_SESSION["userData"];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page 1</title>
-    <link rel="stylesheet" type="text/css" href="../styles/updet.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../styles/updet.css">
+    <!-- <link rel="stylesheet" href="../styles/main.css"> -->
 
 </head>
 <body>
-    <div class="navbar">
+    <div class="navbar1">
         <a href="../pages/main.php">Home</a>
         <a href="../pages/about.php">About</a>
         <a href="../index.php">Logout</a>
@@ -38,72 +40,70 @@ $userData = $_SESSION["userData"];
             </div>
         </div>
 
-        <main class="content">
+        <main class="content1">
             <h3>Form Biodata</h3>
-            <form action="../scripts/php/req_form.php" method="post">
-                <label for="nama">Nama:</label>
-                <input type="text" id="nama" name="nama" placeholder="Nama Lengkap Anda">
-
-                <label for="alamat">Alamat:</label>
-                <input type="text" id="alamat" name="alamat" placeholder="Alamat Lengkap Anda">
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Email Anda">
-
-                <label for="jenjang">Jenjang Studi:</label>
-                <select id="jenjang" name="jenjang">
-                    <option value="s1">S1</option>
-                    <option value="s2">S2</option>
-                    <option value="s3">S3</option>
-                </select>
-
-                <label for="nim">NIM:</label>
-                <input type="text" id="nim" name="nim" placeholder="NIM Anda">
-
-                <label for="prodi">Program Studi:</label>
-                <input type="text" id="prodi" name="prodi" placeholder="Program Studi Anda">
-
-                <label for="ipk">IPK:</label>
-                <input type="number" step="0.01" id="ipk" name="ipk" placeholder="IPK Anda">
-
-                <label for="angkatan">Angkatan:</label>
-                <input type="number" id="angkatan" name="angkatan" placeholder="Angkatan Anda">
-
-                <label for="kontak">Kontak:</label>
-                <input type="text" id="kontak" name="kontak" placeholder="Nomor Kontak Anda">
-
-                <label for="tempat_lahir">Tempat Lahir:</label>
-                <input type="text" id="tempat_lahir" name="tempat_lahir" placeholder="Tempat Lahir Anda">
-
-                <label for="tanggal_lahir">Tanggal Lahir:</label>
-                <input type="date" id="tanggal_lahir" name="tanggal_lahir">
-
-                <fieldset>
-                    <legend>Jenis Kelamin:</legend>
-                    <label for="laki">
-                        <input type="radio" id="laki" name="jk" value="l" checked> Laki-laki
-                    </label>
-                    <label for="perempuan">
-                        <input type="radio" id="perempuan" name="jk" value="p"> Perempuan
-                    </label>
-                </fieldset>
-
-                <div class="form-buttons">
-                    <input type="submit" value="Submit" name="submit" id="submit">
-                    <input type="reset" value="Reset" name="reset" id="reset">
-                    <input type="button" value="Update" name="update" id="update" onclick="updateData()">
-                </div>
-            </form>
-        </main>
+            
+            <form class="row g-3">
+            <div class="row">
+    <div class="col-md-4">
+        <label for="validationServer01" class="form-label1">Nama Lengkap</label>
+        <input type="text" class="form-control" id="validationServer01" value="asep" required>
     </div>
-
-    <script>
-        function updateData() {
-            // Implementasi logika pembaruan di sini (biasanya dengan JavaScript atau server-side script).
-            alert("Data berhasil diperbarui!");
-        }
-    </script>
+    <div class="col-md-4">
+        <label for="validationServer02" class="form-label2">NIM</label>
+        <input type="text" class="form-control" id="validationServer02" value="Otto" required>
+    </div>
+    <div class="col-md-4">
+        <label for="validationServer02" class="form-label2">Program Studi</label>
+        <input type="text" class="form-control" id="validationServer02" value="Otto" required>
+    </div>
+    <div class="col-md-3 position-relative">
+    <label for="validationTooltip04" class="form-label">Jenjang Studi</label>
+    <select class="form-select" id="validationTooltip04" required>
+      <option selected disabled value="">pilih</option>
+      <option>D3</option>
+      <option>S1</option>
+      <option>S2</option>
+    </select>
+    </div>
+    <div class="col-md-4">
+        <label for="validationServer03" class="form-label3">Tempat Lahir</label>
+        <input type="text" class="form-control" id="validationServer03" value="Otto" required>
+    </div>
+    <div class="col-md-4">
+        <label for="validationServer01" class="form-label1">Alamat</label>
+        <input type="text" class="form-control" id="validationServer01" value="asep" required>
+    </div>
+    <div class="col-md-4">
+        <label for="validationServer01" class="form-label1">No Telepon</label>
+        <input type="text" class="form-control" id="validationServer01" value="asep" required>
+    </div>
+    <div class="col-md-4">
+        <label for="validationServer01" class="form-label1">Tanggal Lahir</label>
+        <input type="date" class="form-control" id="validationServer01" required>
+    </div>
+    <div class="col-md-4">
+        <label for="validationServer01" class="form-label1">IPK</label>
+        <input type="text" class="form-control" id="validationServer01" value="asep" required>
+    </div>
+    <div class="col-md-4">
+        <label for="validationServer01" class="form-label1">Email</label>
+        <input type="email" class="form-control" id="validationServer01" value="asep" required>
+    </div>
+    <div class="col-md-4">
+        <label for="validationServer01" class="form-label1">Angkatan</label>
+        <input type="text" class="form-control" id="validationServer01" required>
+    </div>
+    <div class="col-md-4">
+        <label for="validationServer01" class="form-label1">Semester</label>
+        <input type="date" class="form-control" id="validationServer01" required>
+    </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+</form>
     <script src="../styles/script.js"></script>
-   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  
 </body>
 </html>
