@@ -1,3 +1,16 @@
+<?php 
+require '../scripts/php/req_login.php';
+
+session_start();
+
+if (!isset($_SESSION["userData"])) {
+    header('Location: ../index.php');
+    exit;
+}
+
+$userData = $_SESSION["userData"];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,9 +46,11 @@
             <div class="card">
                 <!-- <img src="https://via.placeholder.com/150" alt="Card Image"> -->
                 <div class="card-content">
-                    <h3>Nama</h3>
-                    <h3>Nim</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, atque aliquam ea voluptate est voluptatem corrupti aperiam saepe dignissimos architecto excepturi laborum consequatur velit, voluptates nostrum, consectetur voluptatibus culpa aliquid!.</p>
+                    <h3 style="font-size: 32px;"><?php echo $userData["nama_lengkap"]?></h3>
+                    <h3 style="font-size: 28px;"><?php echo $userData["nim"]?></h3>
+                    <?php if ($userData["jenjang_studi"] != null) { ?>
+                        <h3 style="font-size: 28px;"><?php echo $userData["jenjang_studi"]?></h3>
+                    <?php } ?>
                 </div>
             </div>
         </div>
@@ -45,22 +60,21 @@
             <div class="wrapper">
                 <p class="current-date"></p>
                 <div class="icons">
-                  <span id="prev" class="previous round">&#8249;</span>
-                  <span id="next" class="next round">&#8250;</span>
+                    <span id="prev" class="previous round">&#8249;</span>
+                    <span id="next" class="next round">&#8250;</span>
                 </div>
-              </header>
-              <div class="calendar">
-                <ul class="weeks">
-                  <li>Sun</li>
-                  <li>Mon</li>
-                  <li>Tue</li>
-                  <li>Wed</li>
-                  <li>Thu</li>
-                  <li>Fri</li>
-                  <li>Sat</li>
-                </ul>
-                <ul class="days"></ul>
-              </div>
+                <div class="calendar">
+                    <ul class="weeks">
+                        <li>Sun</li>
+                        <li>Mon</li>
+                        <li>Tue</li>
+                        <li>Wed</li>
+                        <li>Thu</li>
+                        <li>Fri</li>
+                        <li>Sat</li>
+                    </ul>
+                    <ul class="days"></ul>
+                </div>
             </div>
         </div>
 

@@ -8,7 +8,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $query = "SELECT * FROM user WHERE username='$username' AND password='$password'";
     $result = mysqli_query($conn, $query);
 
+    while($row = mysqli_fetch_assoc($result)){
+        $userData[] = $row;
+    }
+
     if ($result->num_rows == 1) {
+        session_start();
+        $_SESSION["userData"] = $userData[0];
         header('Location: ../../pages/main.php');
     } else {
         header('Location: ../../index.php');
