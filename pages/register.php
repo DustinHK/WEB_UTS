@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +10,7 @@
     <section class="regis">
         <div class="regis-form-container">
             <h1>REGISTER</h1><hr><br>
-            <form action="" method="post">
+            <form action="../index.php" method="post">
                 <label for="nama">Nama</label>
                 <input type="text" name="nama" class="textfield">
                 <label for="nim">NIM</label>
@@ -22,7 +21,7 @@
                 <input type="password" name="password" class="textfield">
             </form>
             <div class ="wrapper">
-                <button type="submit" class="btn"><a href="../index.html">Submit</a></button>
+                <button type="submit" class="btn"><a href="../index.php">Submit</a></button>
             </div>
         </div>
     </section>

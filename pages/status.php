@@ -10,19 +10,19 @@
 </head>
 <body>
     <div class="navbar">
-        <a href="../pages/main.html">Home</a>
-        <a href="../pages/about.html">About</a>
-        <a href="../index.html">Logout</a>
+        <a href="../pages/main.php">Home</a>
+        <a href="../pages/about.php">About</a>
+        <a href="../index.php">Logout</a>
         <a href="#">      </a>
         <a href="#">      </a>
     </div>
 
     <div class="sidebar">
-        <a href="../pages/main.html">Halaman Utama</a>
-        <a href="../pages/page1.html">Profil</a>
+        <a href="../pages/main.php">Halaman Utama</a>
+        <a href="../pages/page1.php">Profil</a>
         <a class="sidebar-toggle" onclick="toggleSidebar()">Surat</a>
         <div class="sidebar-content" id="sidebarContent">
-            <a href="../pages/page2.html">Jenis Surat</a>
+            <a href="../pages/page2.php">Jenis Surat</a>
         </div>
     </div>
     <section class="dash-main">
@@ -41,8 +41,8 @@
                     <td>Surat Aktif Kuliah</td>
                     <td>Pending</td>
                     <td >
-                        <div class="wrappers"><button type="submit" class="btn1"><a href="../index.html">Submit</a></button></div>
-                   </td>
+                        <div class="wrappers"><button type="submit" class="btn1"><a href="../index.php">Submit</a></button></div>
+                    </td>
             </tbody>
         </table>
     </section>
