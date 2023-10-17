@@ -31,33 +31,39 @@
         <div class="content">
             <h2 style="font-weight: 900;">Halaman Utama</h2>
             <div class="card">
-                <img src="https://via.placeholder.com/150" alt="Card Image">
+                <!-- <img src="https://via.placeholder.com/150" alt="Card Image"> -->
                 <div class="card-content">
-                    <h3>Card Title 1</h3>
-                    <p>This is the content for Card 1.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://via.placeholder.com/150" alt="Card Image">
-                <div class="card-content">
-                    <h3>Card Title 2</h3>
-                    <p>This is the content for Card 2.</p>
-                </div>
-            <div class="card">
-                <img src="https://via.placeholder.com/150" alt="Card Image">
-                <div class="card-content">
-                    <h3>Card Title 3</h3>
-                    <p>This is the content for Card 3.</p>
-                </div>
-            <div class="card">
-                <img src="https://via.placeholder.com/150" alt="Card Image">
-                <div class="card-content">
-                    <h3>Card Title 4</h3>
-                    <p>This is the content for Card 4.</p>
+                    <h3>Nama</h3>
+                    <h3>Nim</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, atque aliquam ea voluptate est voluptatem corrupti aperiam saepe dignissimos architecto excepturi laborum consequatur velit, voluptates nostrum, consectetur voluptatibus culpa aliquid!.</p>
                 </div>
             </div>
         </div>
-    </div>
+
+
+        <div class="content">
+            <div class="wrapper">
+                <p class="current-date"></p>
+                <div class="icons">
+                  <span id="prev" class="previous round">&#8249;</span>
+                  <span id="next" class="next round">&#8250;</span>
+                </div>
+              </header>
+              <div class="calendar">
+                <ul class="weeks">
+                  <li>Sun</li>
+                  <li>Mon</li>
+                  <li>Tue</li>
+                  <li>Wed</li>
+                  <li>Thu</li>
+                  <li>Fri</li>
+                  <li>Sat</li>
+                </ul>
+                <ul class="days"></ul>
+              </div>
+            </div>
+        </div>
+
     <script src="../styles/script.js"></script>
 </body>
 </html>
