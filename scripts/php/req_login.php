@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $query = "SELECT * FROM user WHERE username='$username' AND password='$password'";
     $result = mysqli_query($conn, $query);
-
+    
     while($row = mysqli_fetch_assoc($result)){
         $userData[] = $row;
     }

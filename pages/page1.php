@@ -96,10 +96,10 @@ $userData = $_SESSION["userData"];
                     </div>
                     <div class="col-md-4">
                         <label for="semester" class="form-label1">Semester</label>
-                        <input type="date" class="form-control" name="semester" required>
+                        <input type="text" class="form-control" name="semester" required>
                     </div>
                     <div class="col-12">
-                        <button class="btn btn-primary" type="submit" name="submit"><a href="../pages/main.php"></a>Submit form</button>
+                        <button class="btn btn-primary" type="submit" name="submit">Submit form</button>
                     </div>
                 </div>
             </form>

@@ -1,11 +1,11 @@
 <?php
-require 'koneksi.php';
 require 'req_login.php';
+require 'koneksi.php';
 
 session_start();
 
 $userData = $_SESSION["userData"];
-$username = $userData["username"];
+$id = $userData["id_user"];
 
 if (isset($_POST['submit'])) {
     $nama = $_POST['nama'];
@@ -21,12 +21,18 @@ if (isset($_POST['submit'])) {
     $angkatan = $_POST['angkatan'];
     $semester = $_POST['semester'];
 
-    $query = "UPDATE user SET nama=$nama, nim=$nim, prodi=$prodi, jenjang=$jenjang, tempat_lahir=$tempat_lahir, alamat=$alamat, no_telepon=$no_telepon, tanggal_lahir=$tanggal_lahir, ipk=$ipk, email=$email, angkatan=$angkatan, semester=$semester WHERE username=$username";
+    $query = "UPDATE user SET nama_lengkap='$nama', nim='$nim', prodi='$prodi', jenjang_studi='$jenjang', tempat_lahir='$tempat_lahir', alamat='$alamat', no_telepon='$no_telepon', tanggal_lahir='$tanggal_lahir', ipk='$ipk', email='$email', angkatan='$angkatan', semester='$semester' WHERE id_user=$id";
     $result = mysqli_query($conn, $query);
 
     if ($result) {
-        header('Location: ../../pages/main.php');
-        exit;
+        echo "
+        <script>
+            alert('Data berhasil diubah!');
+            window.location.href='../../pages/page1.php';
+        </script>
+        ";
+        // header('Location: ../../pages/main.php');
+        // exit;
     } else {
         $error = true;
     }
