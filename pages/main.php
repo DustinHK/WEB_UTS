@@ -49,7 +49,7 @@ $userData = $_SESSION["userData"];
                     <h3 style="font-size: 32px;"><?php echo $userData["nama_lengkap"]?></h3>
                     <h3 style="font-size: 28px;"><?php echo $userData["nim"]?></h3>
                     <?php if ($userData["jenjang_studi"] != null) { ?>
-                        <h3 style="font-size: 28px;"><?php echo $userData["jenjang_studi"]?></h3>
+                        <h3 style="font-size: 28px;"><?php echo $userData["jenjang_studi"] . ' - ' . $userData["prodi"]?></h3>
                     <?php } else { ?>
                         <h3 style="font-size: 28px;"></h3>
                     <?php }?>
