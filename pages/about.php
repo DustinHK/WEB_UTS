@@ -10,8 +10,8 @@
 
 <body>
     <div class="navbar">
-        <a href="../code/halaman-utama.html">Home</a>
-        <a href="../code/about.html">About</a>
+        <a href="../pages/main.php">Home</a>
+        <a href="../pages/about.php">About</a>
         <a href="../index.php">Logout</a>
     </div>
     
