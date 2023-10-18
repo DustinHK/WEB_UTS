@@ -1,53 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <link rel="stylesheet" type="text/css" href="../styles/about.css">
 </head>
 
 <body>
     <div class="navbar">
-        <a href="../pages/main.php">Home</a>
-        <a href="../pages/about.php">About</a>
+        <a href="../code/halaman-utama.html">Home</a>
+        <a href="../code/about.html">About</a>
         <a href="../index.php">Logout</a>
-        <a href="#"> </a>
-        <a href="#"> </a>
     </div>
-
-    <div class="container">
-        <div class="sidebar">
-            <a href="../pages/main.php">Halaman Utama</a>
-            <a href="../pages/page1.php">Profil</a>
-            <a class="sidebar-toggle" onclick="toggleSidebar()">Surat</a>
-            <div class="sidebar-content" id="sidebarContent">
-                <a href="../pages/page2.php">Jenis Surat</a>
-                <a href="../pages/status.php">Status Surat</a>
+    
+    <div class="content">
+        <h2>About Us</h2>
+        <p>"Selamat datang di profil kami! Kami adalah kelompok tugas yang terbentuk dari semangat kerja sama dan saling menghormati. Kami percaya bahwa setiap anggota kelompok memiliki kontribusi uniknya sendiri. Kami memiliki komitmen untuk menciptakan lingkungan di mana setiap anggota merasa dihargai dan memiliki kontribusi yang signifikan. Bersama-sama, kami mengintegrasikan ide-ide kreatif dan pengetahuan kami untuk mencapai kesuksesan dalam setiap tugas yang kami emban."</p>
+        
+        <div class="card">
+            <div class="card-image">
+                <img src="../assets/img/foto/duta.png" alt="Card Image 1">
+            </div>
+            <div class="card-content">
+                <h3>"Duta"</h3>
+                <p>Ibnu Gilang Praduta Cipta</p>
+                <p>2209106040</p>
             </div>
         </div>
 
-        <div class="content">
-            <h2>About Us</h2>
-            <p>We are a team of passionate individuals dedicated to creating awesome websites and web applications.</p>
-            <p>Contact us at: example@email.com</p>
-        </div>
         <div class="card">
-            <img src="image.jpg" alt="Card Image">
-            <h3>Card Title</h3>
-            <p>This is a simple card example. You can add content here.</p>
-            <a href="#">Learn More</a>
+            <div class="card-image">
+                <img src="../assets/img/foto/nabil.png" alt="Card Image 2">
+            </div>
+            <div class="card-content">
+                <h3>"Nabil"</h3>
+                <p>Muhammad Nabil Saragih</p>
+                <p>2209106032</p>
+                </div>
         </div>
-
+        
         <div class="card">
-            <img src="image2.jpg" alt="Card Image 2">
-            <h3>Another Card</h3>
-            <p>This is another card with different content.</p>
-            <a href="#">Explore</a>
+            <div class="card-image">
+                <img src="../assets/img/foto/20231018_063648.png" alt="Card Image 3">
+            </div>
+            <div class="card-content">
+                <h3>"Natan"</h3>
+                <p>Natanael Primus Lung Hanyang Ngau</p>
+                <p>2209106029</p>
+            </div>
         </div>
-        <script src="../styles/script.js"></script>
-    </div>
+        
+        <div class="card-a">
+            <div class="card-image">
+                <img src="../assets/img/foto/dustin.jpg" alt="Card Image 4">
+            </div>
+            <div class="card-content">
+                <h3>"Dustin"</h3>
+                <p>Dustin Hessel Kopalit</p>
+                <p>2209106045</p>
+            </div>
+        </div>
+        <div class="card-a">
+            <div class="card-image">
+            <img src="../assets/img/foto/reyy.jpg" alt="Card Image 5">
+        </div>
+        <div class="card-content">
+            <h3>"Reyhan"</h3>
+            <p>Muhammad Reyhanafi</p>
+            <p>2209106028</p>
+        </div>
+    </div> 
 </body>
 
 </html>
