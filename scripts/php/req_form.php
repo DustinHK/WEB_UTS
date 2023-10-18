@@ -22,7 +22,7 @@ if (isset($_POST['submit'])) {
     $angkatan = $_POST['angkatan'];
     $semester = $_POST['semester'];
 
-    $query = "UPDATE user SET nama_lengkap='$nama', nim='$nim', prodi='$prodi', jenjang_studi='$jenjang', tempat_lahir='$tempat_lahir', alamat='$alamat', no_telepon='$no_telepon', tanggal_lahir='$tanggal_lahir', ipk='$ipk', email='$email', angkatan='$angkatan', semester='$semester' WHERE id_user=$id";
+    $query = "UPDATE users SET nama_lengkap='$nama', nim='$nim', prodi='$prodi', jenjang_studi='$jenjang', tempat_lahir='$tempat_lahir', alamat='$alamat', no_telepon='$no_telepon', tanggal_lahir='$tanggal_lahir', ipk='$ipk', email='$email', angkatan='$angkatan', semester='$semester' WHERE id_user=$id";
     $result = mysqli_query($conn, $query);
 
     if ($result) {
