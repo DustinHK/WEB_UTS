@@ -1,3 +1,30 @@
+<?php
+require '../scripts/php/koneksi.php';
+require '../scripts/php/req_login.php';
+
+session_start();
+
+$userData = $_SESSION["userData"];
+$id = $userData["id_user"];
+
+$query = "SELECT * FROM users WHERE id_user=$id";
+$result = mysqli_query($conn, $query);
+$row = mysqli_fetch_assoc($result);
+
+$nama = $row['nama_lengkap'];
+$nim = $row['nim'];
+$prodi = $row['prodi'];
+$jenjang = $row['jenjang_studi'];
+$tempat_lahir = $row['tempat_lahir'];
+$alamat = $row['alamat'];
+$no_telepon = $row['no_telepon'];
+$tanggal_lahir = $row['tanggal_lahir'];
+$ipk = $row['ipk'];
+$email = $row['email'];
+$angkatan = $row['angkatan'];
+$semester = $row['semester'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,13 +50,14 @@
             <p>Yang bertanda tangan di bawah ini Dekan Fakultas Teknik Universitas Mulawarman menerangkan bahwa dengan ini kami memberikan surat tanda aktif kuliah kepada mahasiswa berikut:</p>
             <br>
             <ul>
-                <pre>Nama                             : </pre><br>
-                <pre>NIM                               : </pre><br>
-                <pre>Tempat, Tanggal Lahir  : </pre><br>
-                <pre>Alamat                           : </pre><br>
-                <pre>Alamat                           : </pre><br>
-                <pre>Alamat                           : </pre><br>
-                <pre>Alamat                           : </pre><br>
+                <pre>Nama                             : <?php echo $nama?></pre><br>
+                <pre>NIM                               : <?php echo $nim?></pre><br>
+                <pre>Tempat/Tgl. Lahir          : <?php echo $tempat_lahir . ", " . $tanggal_lahir?></pre><br>
+                <pre>Program Studi                : <?php echo $prodi?></pre><br>
+                <pre>Jenjang Studi                  : <?php echo $jenjang?></pre><br>
+                <pre>Semester                        : <?php echo $semester?></pre><br>
+                <pre>Alamat Lengkap            : <?php echo $alamat?></pre><br>
+                <pre>No. HP                           : <?php echo $no_telepon?></pre><br>
             </ul>
             <br>
             <p>Bahwa yang bersangkutan adalah mahasiswa Fakultas Teknik Universitas Mulawarman masih aktif dan terdaftar pada SEMESTER GANJIL TAHUN AKADEMIK 2023/2024.</p>
