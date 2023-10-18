@@ -7,7 +7,7 @@ if (isset($_POST['register'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $query = "INSERT INTO user (id_user, nim, username, password, nama_lengkap) VALUES ('', '$nim', '$username', '$password', '$nama')";
+    $query = "INSERT INTO users (id_user, nim, username, password, nama_lengkap) VALUES ('', '$nim', '$username', '$password', '$nama')";
     $result = mysqli_query($conn, $query);
 
     if ($result) {
